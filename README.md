@@ -1,5 +1,5 @@
 # Fitness template
-Looking to proof and learn more skills in front-end, i developed a typical tempalte of moderns currents websites. 
+Looking to proof and learn more skills in front-end, i developed a typical template of moderns currents websites. 
 
 ## Built With
 -   [FontAwesome](https://fontawesome.com)  - A toolkit for icons
