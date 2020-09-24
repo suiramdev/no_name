@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik';
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+}
+
+section {
+    height: 100vh;
+}
+
+#home {
+    background-image: url("../images/home.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.header {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.header .logo {
+    justify-content: left;
+    margin: 10px; 
+    width: 175px;
+    height: 75px;
+}
+
+#home .info {
+    position: absolute;
+    bottom: 25%;
+    left: 5%;
+    width: 500px;
+    color: #3E69ED;
+}
+
+#home .info h1 {
+    font-size: 2.5em;
+}
+
+#home .info p {
+    font-size: 1em;
+    opacity: 0.25;
+}
+
+#home .info button {
+    position: relative;
+    width: 250px;
+    height: 60px;
+    background-color: transparent;
+    outline: none;
+    border-radius: 50px;
+    border: 3px solid #3E69ED;
+    color: #3E69ED;
+    font-family: 'Reem Kufi';
+    font-size: 1.2em;
+
+    transition: 0.2s;
+    overflow: hidden;
+}
+
+
+#home .info button::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #3E69ED;
+    top: -2px;
+    left: -2px;
+    transform: translate(-100%);
+    
+    transition: 0.3s;
+    z-index: -1;
+}
+
+#home .info button:hover {
+    color: white;
+}
+
+#home .info button:hover::before {
+    transform: translate(0%);
+}
+
+#home .illustration {
+    position: absolute;
+    bottom: 5%;
+    right: 15%;
+}
+
+#services {
+    height: 500px;
+    background-color: #3E69ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#services > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#services > div div {
+    width: 150px;
+}
+
+#services > div div img {
+   width: 65%;
+   height: 65%;
+   margin-bottom: 20px;
+}
+
+#services > div div h1 {
+    color: white;
+    font-size: 1.25em;
+    margin-bottom: 5px;
+}
+
+#services > div div p {
+    color: white;
+    font-size: 0.75em;
+    line-height: 1em;
+}
+
+#about {
+    background-color: whitesmoke;
+}
+
+#contact {
+    background-color: white;
+}
+
+.footer {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f0f0f;
+    padding: 0 10% 0 10%;
+}
+
+.footer > div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #3E69ED;
+    padding-top: 25px;
+}
+
+.footer > div div {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.footer * {
+    color: white;
+}
+
+.footer a {
+    margin-right: 5%;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer a:hover * {
+    color: #3E69ED;
+}
+
+.popup {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup > div {
+    width: 50%;
+    height: 80%;
+    background-color: white;
+    border: 2px solid rgb(216, 216, 216);
+    border-radius: 8px;
+    padding: 30px;
+    color: black;
+    overflow:auto;
+}
+
+.popup > div pre {
+    width: 100%;
+    height: 100%;
+}
