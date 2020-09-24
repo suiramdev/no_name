@@ -9,4 +9,4 @@ Looking to proof and learn more skills in front-end, i developed a typical templ
 -   **Marius**  -  _Initial work_  -  [suiramdev](https://github.com/suiramdev)
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](https://gist.github.com/PurpleBooth/LICENSE.md) file for details
+This project is licensed under the MIT License - see the LICENSE.md file for details
